@@ -1,4 +1,11 @@
 def reverse_each_word(sentence)  
-  sentence = sentence.split(" ")
-sentence.each {|word| word.reverse}
-end 
+  new_sentence = sentence.split(" ")
+reversed_sentence = new_sentence.each {|word| word.reverse}
+return reversed_sentence.join(" ")
+end  
+
+#def reverse_each_word(array)
+ #new_array = array.split(" ")
+  #reversed_array = new_array.each {|x| x.reverse!}
+  #return reversed_array.join(" ")
+#end
